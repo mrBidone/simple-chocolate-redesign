@@ -1,0 +1,47 @@
+.container {
+  padding: 20px 20px 14px 20px;
+  margin: 0 auto;
+}
+.page-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: none;
+}
+
+.social-list {
+  display: none;
+}
+
+.burger-button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  stroke: #111111;
+  padding: 0;
+}
+
+.page-header {
+}
+
+.page-nav {
+}
+.logo {
+}
+.logo-italic {
+}
+.logo-icon {
+}
+.nav-list-item {
+}
+.nav-link {
+}
+
+.social-list-item {
+}
+.social-list-icon {
+}
