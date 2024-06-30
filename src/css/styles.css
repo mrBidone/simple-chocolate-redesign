@@ -46,16 +46,16 @@
   overflow: hidden;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .container {
-    max-width: 375px;
+    min-width: 375px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
-    max-width: 768px;
-    padding: 0 32px;
+    min-width: 768px;
+    padding: 24px 32px;
   }
 }
 
@@ -109,4 +109,16 @@
   fill: #fcf1e0;
   width: 21px;
   height: 21px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .logo {
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.03em;
+  }
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
