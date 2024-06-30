@@ -1,0 +1,248 @@
+.hero-section {
+  padding-bottom: 71px;
+  color: #fff;
+}
+
+.hero-container {
+  padding: 20px 20px;
+  background-color: hsl(273, 19%, 12%);
+  border-radius: 30px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../img/mobile/JPG/compressed/hero-image-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../img/mobile/JPG/compressed/hero-image-mob@2x.jpg);
+  }
+}
+
+.hero-title {
+  max-width: 295px;
+  padding-top: 375px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.hero-btn {
+  margin-right: 14px;
+}
+
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 159px;
+  height: 41px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 0;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  transition: color 250ms linear, border 250ms linear,
+    background-color 250ms linear;
+  margin-bottom: 32px;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+  background-color: #fff;
+  color: #fd9222;
+  border: 1px solid #fd9222;
+}
+
+.hero-scroll {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  gap: 14px;
+}
+
+.scroll-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: #fd9222;
+  transition: background-color 250ms linear, fill 250ms linear;
+}
+
+.scroll-icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 50px;
+  }
+
+  .hero-container {
+    padding: 40px 40px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../img/tablet/JPG/compressed/hero-image-tab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../img/tablet/JPG/compressed/hero-image-tab@2x.jpg);
+    }
+  }
+  .hero-title {
+    max-width: 484px;
+    padding-top: 631px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  .links-flexbox {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-link {
+    margin-right: auto;
+  }
+
+  .btn-dark {
+    width: 183px;
+    height: 45px;
+    margin-bottom: 0;
+  }
+
+  .hero-btn {
+    margin-right: 14px;
+    margin-bottom: 0;
+  }
+
+  .hero-scroll {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    gap: 14px;
+  }
+
+  .scroll-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    fill: #fd9222;
+    transition: background-color 250ms linear, fill 250ms linear;
+  }
+
+  .scroll-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    padding-bottom: 72px;
+  }
+
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../img/desktop/JPG/compressed/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../img/desktop/JPG/compressed/hero-image@2x.jpg);
+    }
+  }
+  .hero-title {
+    padding-top: 341px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  .hero-link {
+    margin-right: auto;
+  }
+
+  .btn-dark {
+    width: 183px;
+    height: 45px;
+  }
+
+  .hero-btn {
+    margin-right: 14px;
+  }
+
+  .hero-scroll {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    gap: 14px;
+  }
+
+  .scroll-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    fill: #fd9222;
+    transition: background-color 250ms linear, fill 250ms linear;
+  }
+
+  .scroll-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
