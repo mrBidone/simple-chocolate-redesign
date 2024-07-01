@@ -169,18 +169,6 @@
     gap: 14px;
   }
 
-  .scroll-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    fill: #fd9222;
-    transition: background-color 250ms linear, fill 250ms linear;
-  }
-
   .scroll-icon {
     width: 16px;
     height: 16px;
@@ -242,20 +230,18 @@
     gap: 14px;
   }
 
-  .scroll-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    fill: #fd9222;
-    transition: background-color 250ms linear, fill 250ms linear;
-  }
-
   .scroll-icon {
     width: 16px;
     height: 16px;
+  }
+
+  .hero-scroll:hover,
+  .hero-scroll:focus {
+    color: #fd9222;
+  }
+
+  .hero-scroll:hover .scroll-btn {
+    background-color: #fd9222;
+    fill: #ffffff;
   }
 }
