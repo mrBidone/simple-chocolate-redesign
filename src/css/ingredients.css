@@ -97,9 +97,6 @@
   margin-bottom: 14px;
 }
 
-.card-back-list-item {
-}
-
 .card-back-link {
   font-weight: 400;
   font-size: 10px;
@@ -133,4 +130,80 @@
 
 .ingredients-card:hover .card-back {
   transform: rotateY(360deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .ingredients-section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .section-title {
+    max-width: 411px;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    margin-bottom: 28px;
+  }
+
+  .ingredients-text {
+    max-width: 486px;
+    line-height: 1.29;
+    margin-bottom: 50px;
+  }
+
+  .ingredients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .ingredients-list-item:nth-child(3) {
+    order: 2;
+  }
+  .ingredients-list-item:nth-child(2) {
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .ingredients-section {
+    padding-top: 128px;
+    padding-bottom: 64px;
+  }
+  .ingredients-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+  .ingredients-card {
+    width: 270px;
+    height: 270px;
+    perspective: 1000px;
+  }
+
+  .ingredients-list-item:nth-child(3) {
+    order: 0;
+  }
+  .ingredients-list-item:nth-child(2) {
+    order: 0;
+  }
+
+  .card-back {
+    padding: 20px 20px;
+  }
+
+  .card-back-description {
+    -webkit-line-clamp: 9; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+  }
+  .short-description {
+    -webkit-line-clamp: 7;
+  }
 }
