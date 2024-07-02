@@ -1,0 +1,136 @@
+.ingredients-section {
+  padding-top: 72px;
+  padding-bottom: 36px;
+}
+
+.section-title {
+  max-width: 283px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.ingredients-text {
+  max-width: 335px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0 auto 32px auto;
+}
+
+.ingredients-list-item:nth-child(4n + 1) .card-front {
+  background-color: #fd9222;
+  color: #fff;
+}
+.ingredients-list-item:nth-child(4n + 3) .card-front {
+  background-color: #1e1823;
+  color: #fff;
+}
+
+.ingredients-list-item:nth-child(even) .card-front {
+  border: 1px solid #fd9222;
+  background-color: #fff;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ingredients-card {
+  width: 336px;
+  height: 270px;
+  perspective: 1000px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 28px 28px;
+  left: 0;
+  top: 0;
+  transition: 1000ms;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.card-front {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+.ingredient-illustration {
+  width: 224px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-back {
+  background-color: #fff;
+  border: 1px solid #fd9222;
+  transform: rotateY(180deg);
+}
+
+.card-back-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 8px;
+}
+.card-back-link-list {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.card-back-list-item {
+}
+
+.card-back-link {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 35px;
+  padding: 6px 16px;
+  height: 24px;
+  background-color: #fd9222;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+.link-light {
+  border: 1px solid #fd9222;
+  background-color: #fafafa;
+  color: #111;
+}
+
+.card-back-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+  text-transform: none;
+}
+.ingredients-card:hover .card-front {
+  transform: rotateY(180deg);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.ingredients-card:hover .card-back {
+  transform: rotateY(360deg);
+}
