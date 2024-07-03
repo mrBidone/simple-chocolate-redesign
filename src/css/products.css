@@ -71,3 +71,12 @@
   width: 28px; /* 13px + 13px + 13px (2 точки + отступ) */
   border-radius: 12px;
 }
+
+@media only screen and (min-width: 768px) {
+  .products-section {
+    padding: 50px 0;
+  }
+  .products-list {
+    margin-bottom: 50px;
+  }
+}
