@@ -2,8 +2,8 @@
   padding: 36px 0;
 }
 
-.swiper-wrapper {
-  margin-bottom: 20px;
+.products-list {
+  margin-bottom: 40px;
 }
 
 .products-item {
@@ -54,7 +54,20 @@
 
 .swiper-pagination {
   display: flex;
-  gap: 13px;
   justify-content: center;
-  fill: rgba(17, 17, 17, 0.1);
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  margin: 0 6.5px; /* Половина отступа 13px */
+  background-color: rgba(17, 17, 17, 0.1);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fd9222;
+  width: 28px; /* 13px + 13px + 13px (2 точки + отступ) */
+  border-radius: 12px;
 }

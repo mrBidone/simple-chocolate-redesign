@@ -1,32 +1,31 @@
-import Swiper from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import Swiper from 'swiper/bundle';
+import 'swiper/swiper-bundle.css';
+import './css/styles.css';
 
-const swiper = new Swiper('.swiper', {
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 18,
-  followFinger: true,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      bulletClass: 'swiper-pagination-bullet',
+      bulletActiveClass: 'swiper-pagination-bullet-active',
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 18,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 18,
+      },
     },
-
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 18,
-    },
-  },
+  });
 });
