@@ -18,6 +18,7 @@
   display: block;
   padding: 32px 53px;
 }
+
 .products-card-img {
   margin-bottom: 8px;
 }
@@ -77,6 +78,29 @@
     padding: 50px 0;
   }
   .products-list {
+    margin-bottom: 40px;
+  }
+
+  .products-item {
+    max-width: 270px;
+    margin: 0 0;
+  }
+
+  .products-card {
+    display: block;
+    padding: 32px 20px;
+  }
+
+  .products-card-img {
+    width: 230px;
+    margin-bottom: 8px;
+  }
+  .products-list {
     margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .products-section {
+    padding: 64px 0;
   }
 }
