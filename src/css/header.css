@@ -22,7 +22,7 @@
   height: 28px;
   border: none;
   background-color: transparent;
-  stroke: #111111;
+  stroke: var(--dark-icon-stroke);
   padding: 0;
   line-height: 0;
 }
@@ -84,7 +84,7 @@
 
   .nav-link:hover,
   .nav-link:focus {
-    color: #fd9222;
+    color: var(--accent-color);
   }
 
   .social-list {
@@ -101,6 +101,6 @@
 
   .social-list-icon:hover,
   .social-list-icon:focus {
-    stroke: #fd9222;
+    stroke: var(--accent-color);
   }
 }

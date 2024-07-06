@@ -19,11 +19,28 @@
 @import url('./footer.css');
 
 :root {
+  --main-bg-color: #fafafa;
+  --dark-bg-color: #1e1823;
+  --light-bg-color: #ffffff;
+
+  --accent-color: #fd9222;
+  --main-text-color: #111111;
+  --light-text-color: #ffffff;
+  --light-transparent-text-color: rgba(255, 255, 255, 0.7);
+  --light-btn-color: #fcf1e0;
+
+  --dark-icon-stroke: #111111;
+
+  --default-duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #111111;
-  background-color: #fafafa;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -81,8 +98,8 @@
   min-width: 120px;
   height: 41px;
   padding: 0;
-  background-color: #fd9222;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--light-text-color);
   border: 0;
   border-radius: 100px;
   font-weight: 600;
@@ -100,8 +117,8 @@
 
 .btn:hover,
 .btn:focus {
-  background-color: #fcf1e0;
-  color: #fd9222;
+  background-color: var(--light-btn-color);
+  color: var(--accent-color);
 }
 
 /* .section {
@@ -121,7 +138,7 @@
 } */
 
 .accent-color {
-  color: #fd9222;
+  color: var(--accent-color);
 }
 
 /* LOGO STYLES */
@@ -142,8 +159,8 @@
 
 .logo-icon {
   margin-left: 4px;
-  stroke: #fd9222;
-  fill: #fcf1e0;
+  stroke: var(--accent-color);
+  fill: var(--light-btn-color);
   width: 21px;
   height: 21px;
 }
@@ -162,6 +179,6 @@
 
 .btn:hover,
 .btn:focus {
-  background-color: #fcf1e0;
-  color: #fd9222;
+  background-color: var(--light-btn-color);
+  color: var(--accent-color);
 }
