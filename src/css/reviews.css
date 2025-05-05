@@ -1,0 +1,79 @@
+.reviews-section {
+    padding: 36px 0;
+}
+
+
+.reviews-title {
+    margin-bottom: 72px;
+}
+
+.review-list {
+    margin-bottom: 20px;
+}
+
+.reviews-swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.review-list-item {
+    display: block;
+    padding: 56px 18px 42px 18px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 9px 27px 0 rgba(215, 228, 249, 0.25);
+    background: #fff;
+    position: relative;
+    width: 335px;
+    margin: 0 auto;
+}
+
+.reviewers-photo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) scale(1);
+    display: block;
+    border-radius: 50%;
+}
+
+.reviewers-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: #111;
+    margin-bottom: 24px;
+}
+
+.review-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+    max-width: 299px;
+}
+
+.reviews-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    margin: 0 6.5px;
+    background-color: rgba(17, 17, 17, 0.1);
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.reviews-swiper-pagination-bullet-active {
+    background-color: #fd9222;
+    width: 28px;
+    border-radius: 12px;
+}

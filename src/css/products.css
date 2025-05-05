@@ -22,6 +22,7 @@
 .products-card-img {
   margin-bottom: 8px;
 }
+
 .products-card-title {
   font-weight: 600;
   font-size: 18px;
@@ -32,6 +33,7 @@
   text-align: center;
   margin-bottom: 2px;
 }
+
 .products-card-desc {
   font-size: 12px;
   line-height: 1.167;
@@ -40,6 +42,7 @@
   text-align: center;
   margin-bottom: 18px;
 }
+
 .products-card-price {
   display: block;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -62,14 +65,14 @@
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
-  margin: 0 6.5px; /* Половина отступа 13px */
+  margin: 0 6.5px;
   background-color: rgba(17, 17, 17, 0.1);
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
   background-color: #fd9222;
-  width: 28px; /* 13px + 13px + 13px (2 точки + отступ) */
+  width: 28px;
   border-radius: 12px;
 }
 
@@ -77,6 +80,7 @@
   .products-section {
     padding: 50px 0;
   }
+
   .products-list {
     margin-bottom: 40px;
   }
@@ -95,10 +99,12 @@
     width: 230px;
     margin-bottom: 8px;
   }
+
   .products-list {
     margin-bottom: 50px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .products-section {
     padding: 64px 0;
