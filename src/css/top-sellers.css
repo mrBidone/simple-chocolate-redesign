@@ -26,10 +26,6 @@
   margin-bottom: 20px;
 }
 
-.btn {
-  max-width: 120px;
-}
-
 .sellers-el-wrapper {
   display: flex;
   flex-direction: column;

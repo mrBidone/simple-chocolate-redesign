@@ -92,7 +92,7 @@ body {
 /* BUTTONS MAIN STYLES */
 
 .btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   min-width: 120px;

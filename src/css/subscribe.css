@@ -1,0 +1,52 @@
+.subscribe-section {
+    padding: 62px 0;
+    color: var(--light-text-color);
+    background-color: #150701;
+    background-image: url(../img/mobile/JPG/compressed/subcribe@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-title {
+    margin-bottom: 24px;
+}
+
+.subscribe-desc {
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-align: center;
+    max-width: 326px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.subscribe-btn {
+    margin: 0 auto;
+    width: 128px;
+}
+
+@media only screen and (min-width: 768px) {
+    .subscribe-section {
+        padding: 72px 0;
+        background-image: url(../img/tablet/JPG/compressed/subcribe-tab@2x.jpg);
+    }
+
+    .subscribe-title {
+        max-width: 378px;
+    }
+
+    .subscribe-desc {
+        max-width: 467px;
+    }
+
+    .subscribe-btn {
+        min-width: 172px;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .subscribe-section {
+        background-image: url(../img/desktop/JPG/compressed/Subcribe@2x.jpg);
+    }
+}
