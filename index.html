@@ -11,9 +11,9 @@
     />
     
     <script type="module" crossorigin src="/simple-chocolate-redesign/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/simple-chocolate-redesign/assets/vendor-f4e7ce0d.js">
-    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-378d8db2.css">
+    <link rel="modulepreload" crossorigin href="/simple-chocolate-redesign/assets/vendor-0062e853.js">
+    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/vendor-fef9b9da.css">
+    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-a52d8427.css">
   </head>
   <body>
     <header class="header-section">
@@ -309,7 +309,7 @@
     <h2 class="section-title">
       Our <span class="accent-color">products</span>
     </h2>
-    <div class="swiper">
+    <div class="swiper" id="productsSwiper">
       <ul class="products-list swiper-wrapper">
         <li class="products-item swiper-slide">
           <div class="products-card">
@@ -545,63 +545,80 @@
     <h2 class="section-title reviews-title">
       <span class="accent-color">chocolate</span> is loved
     </h2>
-    <div class="reviews-swiper">
+    <div class="swiper" id="reviewsSwiper">
       <ul class="review-list swiper-wrapper">
         <li class="review-list-item swiper-slide">
-          <img
-            class="reviewers-photo"
-            src="/simple-chocolate-redesign/assets/userpic-girl3-mob@2x-994f669a.jpg"
-            alt="User's photo"
-            width="80"
-          />
-          <p class="reviewers-name">Victoria Dobrzhanska</p>
-          <p class="review-text">
-            I love this chocolate bar. Perfect combination of light crispy
-            wafer, covered in a thin layer chocolate.
-          </p>
+          <div class="review-item-thumb">
+            <img
+              class="reviewers-photo"
+              src="/simple-chocolate-redesign/assets/userpic-girl3-mob@2x-994f669a.jpg"
+              alt="User's photo"
+              width="80"
+            />
+            <div class="review-card-thumb">
+              <p class="reviewers-name">Victoria Dobrzhanska</p>
+              <p class="review-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </div>
+          </div>
         </li>
         <li class="review-list-item swiper-slide">
-          <img
-            class="reviewers-photo"
-            src="/simple-chocolate-redesign/assets/userpic-girl3-mob@2x-994f669a.jpg"
-            alt="User's photo"
-            width="80"
-          />
-          <p class="reviewers-name">Victoria Dobrzhanska</p>
-          <p class="review-text">
-            I love this chocolate bar. Perfect combination of light crispy
-            wafer, covered in a thin layer chocolate.
-          </p>
+          <div class="review-item-thumb">
+            <img
+              class="reviewers-photo"
+              src="/simple-chocolate-redesign/assets/userpic-girl3-mob@2x-994f669a.jpg"
+              alt="User's photo"
+              width="80"
+            />
+            <div class="review-card-thumb">
+              <p class="reviewers-name">Victoria Dobrzhanska</p>
+              <p class="review-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </div>
+          </div>
         </li>
         <li class="review-list-item swiper-slide">
-          <img
-            class="reviewers-photo"
-            src="/simple-chocolate-redesign/assets/userpic-girl3-mob@2x-994f669a.jpg"
-            alt="User's photo"
-            width="80"
-          />
-          <p class="reviewers-name">Victoria Dobrzhanska</p>
-          <p class="review-text">
-            I love this chocolate bar. Perfect combination of light crispy
-            wafer, covered in a thin layer chocolate.
-          </p>
+          <div class="review-item-thumb">
+            <img
+              class="reviewers-photo"
+              src="/simple-chocolate-redesign/assets/userpic-girl3-mob@2x-994f669a.jpg"
+              alt="User's photo"
+              width="80"
+            />
+            <div class="review-card-thumb">
+              <p class="reviewers-name">Victoria Dobrzhanska</p>
+              <p class="review-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </div>
+          </div>
         </li>
         <li class="review-list-item swiper-slide">
-          <img
-            class="reviewers-photo"
-            src="/simple-chocolate-redesign/assets/userpic-girl3-mob@2x-994f669a.jpg"
-            alt="User's photo"
-            width="80"
-          />
-          <p class="reviewers-name">Victoria Dobrzhanska</p>
-          <p class="review-text">
-            I love this chocolate bar. Perfect combination of light crispy
-            wafer, covered in a thin layer chocolate.
-          </p>
+          <div class="review-item-thumb">
+            <img
+              class="reviewers-photo"
+              src="/simple-chocolate-redesign/assets/userpic-girl3-mob@2x-994f669a.jpg"
+              alt="User's photo"
+              width="80"
+            />
+            <div class="review-card-thumb">
+              <p class="reviewers-name">Victoria Dobrzhanska</p>
+              <p class="review-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </div>
+          </div>
         </li>
       </ul>
       <div class="reviews-swiper-pagination"></div>
     </div>
+    <button type="button" class="btn-dark btn-review">Leave a review</button>
   </div>
 </section>
 
