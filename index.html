@@ -13,10 +13,10 @@
     <script type="module" crossorigin src="/simple-chocolate-redesign/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/simple-chocolate-redesign/assets/vendor-0062e853.js">
     <link rel="stylesheet" href="/simple-chocolate-redesign/assets/vendor-fef9b9da.css">
-    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-25addeaf.css">
+    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-cbb5e59f.css">
   </head>
   <body>
-    <header class="header-section">
+    <header class="header-section" id="header">
   <div class="container page-header-wrapper">
     <nav class="page-nav">
       <a class="logo" href="./index.html"
@@ -82,7 +82,7 @@
       <nav class="mob-page-nav">
         <ul class="mob-nav-list">
           <li class="mob-nav-list-item">
-            <a class="mob-nav-link" href="./index.html" data-menu-close>Home</a>
+            <a class="mob-nav-link" href="#header" data-menu-close>Home</a>
           </li>
           <li class="mob-nav-list-item">
             <a class="mob-nav-link" href="#made" data-menu-close
@@ -90,12 +90,12 @@
             >
           </li>
           <li class="mob-nav-list-item">
-            <a class="mob-nav-link" href="#reviews" data-menu-close
+            <a class="mob-nav-link" href="#products" data-menu-close
               >Our products</a
             >
           </li>
           <li class="mob-nav-list-item">
-            <a class="mob-nav-link" href="#reviews" data-menu-close
+            <a class="mob-nav-link" href="#top-sellers" data-menu-close
               >Top sellers</a
             >
           </li>
@@ -127,24 +127,27 @@
 </header>
 
     <main>
-      <section class="hero-section">
-    <div class="container">
-        <div class="hero-container">
-            <h1 class="hero-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
-            </h1>
-            <div class="links-flexbox">
-                <button class="btn hero-btn" type="button">Buy now</button>
-                <a class="hero-link btn-dark" href="">How it’s made</a>
-                <a class="hero-scroll" href="#benefits">scroll down
-                    <span class="scroll-btn">
-                        <svg  class="scroll-icon" width="22" height="22">
-                            <use href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#scroll-icon"></use>
-                        </svg>
-                    </span>
-                </a>
-            </div>
-        </div>
+      <section class="hero-section" id="hero">
+  <div class="container">
+    <div class="hero-container">
+      <h1 class="hero-title">
+        Treat yourself or a loved one to our finest ingredients for a moment of
+        pure delight!
+      </h1>
+      <div class="links-flexbox">
+        <button class="btn hero-btn" type="button">Buy now</button>
+        <a class="hero-link btn-dark" href="">How it’s made</a>
+        <a class="hero-scroll" href="#subscribe"
+          >scroll down
+          <span class="scroll-btn">
+            <svg class="scroll-icon" width="22" height="22">
+              <use href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#scroll-icon"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 
       <section class="benefits" id="benefits">
@@ -181,7 +184,7 @@
         </ul>
     </div>
 </section>
-      <section class="ingredients-section">
+      <section class="ingredients-section" id="ingredients">
   <div class="container ingredients-container">
     <h2 class="section-title ingredients-title">
       It all adds up to one exceptional
@@ -443,7 +446,7 @@
   </div>
 </section>
 
-      <section class="products-section">
+      <section class="products-section" id="products">
   <div class="container">
     <h2 class="section-title">
       Our <span class="accent-color">products</span>
@@ -600,7 +603,7 @@
   </div>
 </section>
 
-      <section class="sellers-section">
+      <section class="sellers-section" id="top-sellers">
   <div class="container">
     <h2 class="section-title"><span class="accent-color">Top</span> sellers</h2>
     <ul class="sellers-list">
@@ -679,7 +682,7 @@
   </div>
 </section>
 
-      <section class="reviews-section">
+      <section class="reviews-section" id="reviews">
   <div class="container">
     <h2 class="section-title reviews-title">
       <span class="accent-color">chocolate</span> is loved
@@ -761,7 +764,7 @@
   </div>
 </section>
 
-      <section class="subscribe-section">
+      <section class="subscribe-section" id="subscribe">
   <div class="container">
     <div class="subscribe-thumb">
       <h2 class="section-title subscribe-title">
@@ -827,16 +830,16 @@
     <nav class="footer-nav">
       <ul class="footer-nav-list">
         <li class="footer-nav-list-item">
-          <a class="footer-nav-link" href="./index.html">Home</a>
+          <a class="footer-nav-link" href="#header">Home</a>
         </li>
         <li class="footer-nav-list-item">
           <a class="footer-nav-link" href="#made">How it’s made?</a>
         </li>
         <li class="footer-nav-list-item">
-          <a class="footer-nav-link" href="#reviews">Our products</a>
+          <a class="footer-nav-link" href="#products">Our products</a>
         </li>
         <li class="footer-nav-list-item">
-          <a class="footer-nav-link" href="#reviews">Top sellers</a>
+          <a class="footer-nav-link" href="#top-sellers">Top sellers</a>
         </li>
         <li class="footer-nav-list-item">
           <a class="footer-nav-link" href="#reviews">Chocolate is loved</a>
