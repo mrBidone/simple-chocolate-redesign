@@ -23,7 +23,7 @@
 }
 
 .benefits-list-item::before {
-  box-sizing: content-box;
+  box-sizing: border-box;
   display: flex;
   content: '';
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -53,6 +53,7 @@
   .benefits {
     padding: 50px 0;
   }
+
   .benefits-list {
     flex-direction: row;
     flex-wrap: wrap;

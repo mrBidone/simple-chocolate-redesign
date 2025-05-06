@@ -73,6 +73,10 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .sellers-section {
+    padding: 64px 0;
+  }
+
   .sellers-list {
     margin-bottom: 32px;
   }

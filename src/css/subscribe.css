@@ -7,7 +7,7 @@
     background-size: cover;
 }
 
-.section-title {
+.section-title.subscribe-title {
     margin-bottom: 24px;
 }
 
@@ -31,7 +31,7 @@
         background-image: url(../img/tablet/JPG/compressed/subcribe-tab@2x.jpg);
     }
 
-    .subscribe-title {
+    .section-title.subscribe-title {
         max-width: 378px;
     }
 
