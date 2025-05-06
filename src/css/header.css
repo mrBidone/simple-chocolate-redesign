@@ -164,8 +164,6 @@
   gap: 24px;
 }
 
-.mob-nav-list-item {}
-
 .mob-nav-link:active {
   font-weight: 600;
   color: var(--accent-color);
@@ -178,7 +176,3 @@
   fill: transparent;
   margin-top: auto;
 }
-
-.mob-social-list-item {}
-
-.mob-social-list-icon {}
