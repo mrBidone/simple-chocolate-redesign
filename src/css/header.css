@@ -114,7 +114,7 @@
   position: fixed;
   z-index: 99;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: var(--dark-bg-color);
@@ -175,4 +175,11 @@
   stroke: var(--light-text-color);
   fill: transparent;
   margin-top: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 320px;
+    padding: 24px 32px 24px 32px;
+  }
 }
