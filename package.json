@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "intl-tel-input": "^25.3.1",
     "modern-normalize": "^2.0.0",
     "swiper": "^11.2.6",
     "vite-plugin-full-reload": "^1.0.5",

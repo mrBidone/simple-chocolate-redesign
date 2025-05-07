@@ -1,0 +1,147 @@
+<div class="backdrop" data-modal-buy-now>
+  <div class="modal-buy-now-window">
+    <button
+      type="button"
+      class="modal-buy-now-close-btn"
+      data-modal-buy-now-close
+    >
+      <svg class="buy-now-close-icon" width="28" height="28">
+        <use href="../img/svg/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="section-title modal-title">
+      <span class="accent-color">Buy&nbsp;</span>now
+    </h2>
+    <ul class="modal-products-list">
+      <li class="modal-products-list-item">
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/PNG/compressed/white-chocolate.png    1x,
+              ./img/desktop/PNG/compressed/white-chocolate@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/mobile/PNG/compressed/white-chocolate-mob.png    1x,
+              ./img/mobile/PNG/compressed/white-chocolate-mob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="sellers-img"
+            src="/img/mobile/PNG/compressed/white-chocolate-mob.png"
+            alt="Picture with the chocolate and nuts"
+          />
+        </picture>
+        <p class="products-card-price modal-buy-price">100 g</p>
+      </li>
+      <li class="modal-products-list-item">
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/PNG/compressed/praline-chocolate.png    1x,
+              ./img/desktop/PNG/compressed/praline-chocolate@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/mobile/PNG/compressed/praline-chocolate-mob.png    1x,
+              ./img/mobile/PNG/compressed/praline-chocolate-mob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="sellers-img"
+            src="/img/mobile/PNG/compressed/praline-chocolate-mob.png"
+            alt="Picture with the chocolate and nuts"
+          />
+        </picture>
+        <p class="products-card-price modal-buy-price">200 g</p>
+      </li>
+      <li class="modal-products-list-item">
+        <picture>
+          <source
+            srcset="
+              ./img/desktop/PNG/compressed/dark-chocolate.png    1x,
+              ./img/desktop/PNG/compressed/dark-chocolate@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/mobile/PNG/compressed/dark-chocolate-mob.png    1x,
+              ./img/mobile/PNG/compressed/dark-chocolate-mob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="sellers-img"
+            src="/img/mobile/PNG/compressed/dark-chocolate-mob.png"
+            alt="Picture with the chocolate and nuts"
+          />
+        </picture>
+        <p class="products-card-price modal-buy-price">300 g</p>
+      </li>
+    </ul>
+    <form class="modal-buy-form">
+      <div class="">
+        <label class="buy-form-label" for="customer-personal-info">
+          Personal information
+        </label>
+        <div class="personal-info">
+          <input
+            class="buy-form-input"
+            type="text"
+            id="personal-info"
+            name="customer-name"
+            placeholder="Name"
+          />
+          <input
+            class="buy-form-input"
+            type="text"
+            id="personal-info"
+            name="customer-surname"
+            placeholder="Surname"
+          />
+        </div>
+      </div>
+      <div class="">
+        <label class="buy-form-label" for="customer-email"> Email </label>
+        <input
+          class="buy-form-input"
+          id="customer-email"
+          type="email"
+          name="customer-email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="phone-wrapper">
+        <label class="buy-form-label" for="customer-phone">
+          Phone number
+        </label>
+        <input
+          class="buy-form-input phone-input"
+          id="customer-phone"
+          type="tel"
+          name="customer-phone-num"
+        />
+      </div>
+      <div class="">
+        <label class="buy-form-label" for="customer-comment"> Comment </label>
+        <textarea
+          class="buy-form-input buy-form-textarea"
+          name="customer-comment"
+          id="customer-comment"
+          cols="30"
+          rows="10"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button class="btn submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
