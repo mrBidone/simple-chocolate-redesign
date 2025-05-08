@@ -1,0 +1,89 @@
+.modal-buy-now-window.subscribe-window {
+    padding: 0;
+}
+
+.modal-subscribe-bg-thumb {
+    padding: 32px 24px 137px 24px;
+    /* margin-bottom: 137px; */
+    background-image: image-set(url('../img/mobile/JPG/compressed/modal-subscribe-bg-mob.webp') 1x,
+            url('../img/mobile/JPG/compressed/modal-subscribe-bg-mob2x.webp') 2x);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.modal-subscribe-close {
+    stroke: var(--light-text-color);
+}
+
+.modal-subscribe-thumb {
+    padding: 32px 24px 32px 24px;
+}
+
+.modal-title.subscribe-modal-title {
+    max-width: 263px;
+    text-align: start;
+    margin-bottom: 24px;
+}
+
+.modal-buy-form.modal-subscribe-form {
+    flex-direction: row;
+    gap: 0;
+    position: relative;
+}
+
+.modal-subscribe-input {
+    border-radius: 25px;
+}
+
+.send-btn.modal-subscribe-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 45px;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-buy-now-window.subscribe-window {
+        width: 538px;
+    }
+
+    .modal-subscribe-bg-thumb {
+        padding: 40px 40px 156px 40px;
+        background-image: image-set(url('../img/tablet/JPG/compressed/modal-subscribe-bg.webp') 1x,
+                url('../img/tablet/JPG/compressed/modal-subscribe-bg@2x.webp') 2x);
+    }
+
+    .mobile-br {
+        display: inline;
+    }
+
+    .modal-subscribe-thumb {
+        padding: 40px;
+    }
+
+    .modal-title.subscribe-modal-title {
+        max-width: 298px;
+        margin: 0;
+        margin-bottom: 28px;
+    }
+
+    .modal-buy-form.modal-subscribe-form {
+        flex-direction: row;
+        gap: 8px;
+        position: static;
+    }
+
+    .modal-subscribe-input {
+        border-radius: 25px;
+    }
+
+    .send-btn.modal-subscribe-btn {
+        position: static;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 45px;
+    }
+}

@@ -1,0 +1,57 @@
+<div class="backdrop" data-modal-review>
+  <div class="modal-buy-now-window review-window">
+    <button
+      type="button"
+      class="modal-buy-now-close-btn"
+      data-modal-review-close
+    >
+      <svg class="buy-now-close-icon" width="24" height="24">
+        <use href="../img/svg/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="section-title modal-title review-modal-title">
+      Leave a review&thinsp;<span class="mobile-br"><br /></span>about&thinsp;
+      <span class="accent-color">our chocolate</span>
+    </h2>
+    <form class="modal-buy-form">
+      <div class="">
+        <input
+          class="buy-form-input"
+          type="text"
+          id="personal-info"
+          name="customer-name"
+          placeholder="Name"
+        />
+      </div>
+      <div class="">
+        <input
+          class="buy-form-input"
+          id="customer-email"
+          type="email"
+          name="customer-email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="phone-wrapper">
+        <input
+          class="buy-form-input phone-input"
+          id="customer-phone"
+          type="tel"
+          name="customer-phone-num"
+        />
+      </div>
+      <div class="">
+        <textarea
+          class="buy-form-input buy-form-textarea"
+          name="customer-comment"
+          id="customer-comment"
+          cols="30"
+          rows="10"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button class="btn send-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>

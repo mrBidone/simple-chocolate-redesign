@@ -1,0 +1,28 @@
+.section-title.review-modal-title {
+    max-width: 258px;
+    text-align: start;
+}
+
+.btn.send-btn {
+    width: 93px;
+}
+
+@media only screen and (min-width: 768px) {
+    .review-window {
+        width: 517px;
+    }
+
+    .section-title.review-modal-title {
+        max-width: 298px;
+        text-align: start;
+        margin-left: 0;
+    }
+
+    .mobile-br {
+        display: none;
+    }
+
+    .btn.send-btn {
+        width: 117px;
+    }
+}

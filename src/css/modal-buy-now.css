@@ -168,6 +168,11 @@
         right: 24px;
     }
 
+    .buy-now-close-icon {
+        width: 28px;
+        height: 28px;
+    }
+
     .section-title.modal-title {
         margin-bottom: 32px;
     }

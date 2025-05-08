@@ -19,7 +19,8 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 @import url('./modal-buy-now.css');
-
+@import url('./modal-review.css');
+@import url('./modal-subscribe.css');
 
 :root {
   --main-bg-color: #fafafa;
@@ -102,7 +103,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 120px;
+  width: 120px;
   height: 41px;
   padding: 0;
   background-color: var(--accent-color);
@@ -117,7 +118,7 @@ html {
 
 @media only screen and (min-width: 768px) {
   .btn {
-    min-width: 144px;
+    width: 144px;
     height: 45px;
   }
 }
