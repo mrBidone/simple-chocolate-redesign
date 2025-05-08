@@ -13,7 +13,7 @@
     <script type="module" crossorigin src="/simple-chocolate-redesign/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/simple-chocolate-redesign/assets/vendor-1a704259.js">
     <link rel="stylesheet" href="/simple-chocolate-redesign/assets/vendor-fef9b9da.css">
-    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-dfe6a680.css">
+    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-e31c8c3f.css">
   </head>
   <body>
     <header class="header-section" id="header">
@@ -762,7 +762,9 @@
       </ul>
       <div class="reviews-swiper-pagination"></div>
     </div>
-    <button type="button" class="btn-dark btn-review">Leave a review</button>
+    <button type="button" class="btn-dark btn-review" data-modal-review-open>
+      Leave a review
+    </button>
   </div>
 </section>
 
@@ -778,7 +780,9 @@
         with only the finest ingredients and handcrafted with the utmost care,
         each piece is a work of art that is sure to please.
       </p>
-      <button class="btn subscribe-btn">Subscribe</button>
+      <button class="btn subscribe-btn" data-modal-subscribe-open>
+        Subscribe
+      </button>
     </div>
   </div>
 </section>
@@ -854,7 +858,7 @@
     <div class="backdrop" data-modal-buy-now>
   <div class="modal-buy-now-window">
     <button type="button" class="modal-buy-now-close-btn" data-modal-buy-close>
-      <svg class="buy-now-close-icon" width="28" height="28">
+      <svg class="buy-now-close-icon" width="24" height="24">
         <use href="../img/svg/sprite.svg#close-icon"></use>
       </svg>
     </button>
@@ -974,6 +978,103 @@
       </div>
       <button class="btn submit-btn" type="submit">Submit</button>
     </form>
+  </div>
+</div>
+
+    <div class="backdrop" data-modal-review>
+  <div class="modal-buy-now-window review-window">
+    <button
+      type="button"
+      class="modal-buy-now-close-btn"
+      data-modal-review-close
+    >
+      <svg class="buy-now-close-icon" width="24" height="24">
+        <use href="../img/svg/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="section-title modal-title review-modal-title">
+      Leave a review&thinsp;<span class="mobile-br"><br /></span>about&thinsp;
+      <span class="accent-color">our chocolate</span>
+    </h2>
+    <form class="modal-buy-form">
+      <div class="">
+        <input
+          class="buy-form-input"
+          type="text"
+          id="personal-info"
+          name="customer-name"
+          placeholder="Name"
+        />
+      </div>
+      <div class="">
+        <input
+          class="buy-form-input"
+          id="customer-email"
+          type="email"
+          name="customer-email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="phone-wrapper">
+        <input
+          class="buy-form-input phone-input"
+          id="customer-phone"
+          type="tel"
+          name="customer-phone-num"
+        />
+      </div>
+      <div class="">
+        <textarea
+          class="buy-form-input buy-form-textarea"
+          name="customer-comment"
+          id="customer-comment"
+          cols="30"
+          rows="10"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button class="btn send-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+    <div class="backdrop" data-modal-subscribe>
+  <div class="modal-buy-now-window subscribe-window">
+    <div class="modal-subscribe-bg-thumb">
+      <button
+        type="button"
+        class="modal-buy-now-close-btn"
+        data-modal-subscribe-close
+      >
+        <svg
+          class="buy-now-close-icon modal-subscribe-close"
+          width="24"
+          height="24"
+        >
+          <use href="../img/svg/sprite.svg#close-icon"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-subscribe-thumb">
+      <h2 class="section-title modal-title subscribe-modal-title">
+        Explore our&thinsp;<span class="mobile-br"><br /></span>
+        <span class="accent-color">new chocolate&thinsp;</span>first!
+      </h2>
+      <form class="modal-buy-form modal-subscribe-form">
+        <input
+          class="buy-form-input modal-subscribe-input"
+          id="customer-email"
+          type="email"
+          name="customer-email"
+          placeholder="Enter your email"
+          required
+        />
+        <button class="btn send-btn modal-subscribe-btn" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
 </div>
 
