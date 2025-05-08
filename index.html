@@ -13,7 +13,7 @@
     <script type="module" crossorigin src="/simple-chocolate-redesign/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/simple-chocolate-redesign/assets/vendor-1a704259.js">
     <link rel="stylesheet" href="/simple-chocolate-redesign/assets/vendor-fef9b9da.css">
-    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-5458ae31.css">
+    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-06c5aa02.css">
   </head>
   <body>
     <header class="header-section" id="header">
@@ -135,7 +135,9 @@
         pure delight!
       </h1>
       <div class="links-flexbox">
-        <button class="btn hero-btn" type="button">Buy now</button>
+        <button class="btn hero-btn" type="button" data-modal-buy-open>
+          Buy now
+        </button>
         <a class="hero-link btn-dark" href="#made">How it's made</a>
         <a class="hero-scroll" href="#subscribe"
           >scroll down
@@ -677,7 +679,7 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button class="btn sellers-btn">Buy now</button>
+      <button class="btn sellers-btn" data-modal-buy-open>Buy now</button>
     </div>
   </div>
 </section>
@@ -851,11 +853,7 @@
 
     <div class="backdrop" data-modal-buy-now>
   <div class="modal-buy-now-window">
-    <button
-      type="button"
-      class="modal-buy-now-close-btn"
-      data-modal-buy-now-close
-    >
+    <button type="button" class="modal-buy-now-close-btn" data-modal-buy-close>
       <svg class="buy-now-close-icon" width="28" height="28">
         <use href="../img/svg/sprite.svg#close-icon"></use>
       </svg>
