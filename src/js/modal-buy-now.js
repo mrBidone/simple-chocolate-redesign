@@ -1,5 +1,39 @@
 import intlTelInput from 'intl-tel-input';
 
+(() => {
+  const refs = {
+    openModalBtn: document.querySelectorAll('[data-modal-buy-open]'),
+    closeModalBtn: document.querySelector('[data-modal-buy-close]'),
+    modal: document.querySelector('[data-modal-buy-now]'),
+  };
+
+  refs.openModalBtn.forEach(btn => {
+    btn.addEventListener('click', toggleModal);
+  });
+
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  refs.modal.addEventListener('click', event => {
+    if (event.target === refs.modal) {
+      toggleModal();
+    }
+  });
+
+  document.addEventListener('keydown', event => {
+    if (
+      event.key === 'Escape' &&
+      refs.modal.classList.contains('modal-is-open')
+    ) {
+      toggleModal();
+    }
+  });
+
+  function toggleModal() {
+    refs.modal.classList.toggle('modal-is-open');
+    document.body.classList.toggle('no-scroll');
+  }
+})();
+
 const input = document.querySelector('#customer-phone');
 intlTelInput(input, {
   initialCountry: 'ua',

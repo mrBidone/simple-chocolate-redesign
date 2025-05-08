@@ -5,10 +5,19 @@
     background-color: rgba(46, 47, 66, 0.4);
     top: 0;
     left: 0;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     z-index: 9999;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .modal-buy-now-window {
@@ -110,7 +119,7 @@
 }
 
 .buy-form-input.phone-input::placeholder {
-    padding-left: 10px;
+    padding-left: 3px;
 }
 
 .iti {
@@ -217,9 +226,121 @@
         height: 137px;
     }
 
+    .iti__flag {
+        transform: scale(2.0);
+        margin-left: 24px;
+        margin-right: 10px;
+    }
 
+    .iti__selected-dial-code {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+    }
+
+    .buy-form-input.phone-input::placeholder {
+        padding-left: 3px;
+    }
+
+    .iti__country-name {
+        display: block;
+        margin-left: 5px;
+    }
 
     .btn.submit-btn {
         max-width: 133px;
     }
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .section-title.modal-title {
+        margin-bottom: 32px;
+    }
+
+    .modal-products-list {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .modal-products-list-item {
+        padding: 24px 20px;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .sellers-img {
+        width: 120px;
+        height: 107px;
+    }
+
+    .products-card-price.modal-buy-price {
+        padding: 8px 29px;
+        width: 101px;
+        max-height: 33px;
+        margin: 0;
+    }
+
+    .buy-form-label {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    .personal-info {
+        flex-direction: row;
+        gap: 14px;
+    }
+
+
+    .buy-form-input {
+        height: 66px;
+        border-radius: 13px;
+        padding: 22px 24px;
+        outline-color: var(--accent-color);
+        background-color: var(--main-bg-color);
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+    }
+
+
+    .buy-form-input::placeholder {
+        font-size: 18px;
+    }
+
+    .buy-form-textarea {
+        height: 137px;
+    }
+
+    .iti__flag {
+        transform: scale(2.0);
+        margin-left: 24px;
+        margin-right: 10px;
+    }
+
+    .iti__selected-dial-code {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+    }
+
+    .buy-form-input.phone-input::placeholder {
+        padding-left: 3px;
+    }
+
+    .iti__country-name {
+        display: block;
+        margin-left: 5px;
+    }
+
+    .btn.submit-btn {
+        max-width: 133px;
+    }
+
+
+
 }
