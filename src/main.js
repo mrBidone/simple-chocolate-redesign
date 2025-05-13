@@ -76,8 +76,8 @@ import './js/modals.js';
       `https://www.youtube.com/embed/${id}?rel=0&showinfo=0&autoplay=1`
     );
     iframe.classList.add('video-media');
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
+    // iframe.style.width = '100%';
+    // iframe.style.height = '100%';
     iframe.style.border = 'none';
     iframe.style.borderRadius = '15px';
     return iframe;
