@@ -6,7 +6,6 @@
 <symbol id="play-icon" viewBox="0 0 30 32">
 <path  d="M0 32v-32l29.867 16-29.867 16z"></path>
 </symbol>
-</symbol>
 <symbol id="close-icon" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M24 8l-16 16"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M8 8l16 16"></path>
