@@ -70,7 +70,7 @@
     border-color: var(--accent-color);
 }
 
-.sellers-img {
+.modal-sellers-img {
     width: 84px;
 }
 
@@ -189,7 +189,7 @@
         gap: 14px;
     }
 
-    .sellers-img {
+    .modal-sellers-img {
         width: 120px;
         height: 107px;
     }
@@ -279,7 +279,7 @@
         gap: 14px;
     }
 
-    .sellers-img {
+    .modal-sellers-img {
         width: 120px;
         height: 107px;
     }
