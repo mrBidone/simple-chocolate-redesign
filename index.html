@@ -13,7 +13,7 @@
     <script type="module" crossorigin src="/simple-chocolate-redesign/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/simple-chocolate-redesign/assets/vendor-1a704259.js">
     <link rel="stylesheet" href="/simple-chocolate-redesign/assets/vendor-fef9b9da.css">
-    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-9be71f60.css">
+    <link rel="stylesheet" href="/simple-chocolate-redesign/assets/index-cc7d9962.css">
   </head>
   <body>
     <header class="header-section" id="header">
@@ -23,7 +23,7 @@
         ><span class="logo-italic">Simply</span>&nbsp;chocolate
         <svg class="logo-icon" width="24" height="24">
           <use
-            href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#logo-icon"
+            href="/simple-chocolate-redesign/assets/sprite-bac7d4cd.svg#logo-icon"
             aria-label="chocolate logo"
           ></use>
         </svg>
@@ -50,21 +50,21 @@
       <li class="social-list-item">
         <a href="https://www.instagram.com" target="_blank">
           <svg class="social-list-icon" width="24" height="24">
-            <use href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#instagram-icon"></use>
+            <use href="/simple-chocolate-redesign/assets/sprite-bac7d4cd.svg#instagram-icon"></use>
           </svg>
         </a>
       </li>
       <li class="social-list-item">
         <a href="https://www.instagram.com" target="_blank">
           <svg class="social-list-icon" width="24" height="24">
-            <use href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#twitter-icon"></use>
+            <use href="/simple-chocolate-redesign/assets/sprite-bac7d4cd.svg#twitter-icon"></use>
           </svg>
         </a>
       </li>
     </ul>
     <button class="burger-button" type="button" data-menu-open>
       <svg class="buger-icon" width="28" height="28">
-        <use href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#burger-icon"></use>
+        <use href="/simple-chocolate-redesign/assets/sprite-bac7d4cd.svg#burger-icon"></use>
       </svg>
     </button>
   </div>
@@ -76,7 +76,7 @@
         data-menu-close
       >
         <svg class="close-icon" width="28" height="28" data-menu-close>
-          <use href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#close-icon" data-menu-close />
+          <use href="/simple-chocolate-redesign/assets/sprite-bac7d4cd.svg#close-icon" data-menu-close />
         </svg>
       </button>
       <nav class="mob-page-nav">
@@ -111,14 +111,14 @@
       <li class="mob-social-list-item">
         <a href="https://www.instagram.com" target="_blank">
           <svg class="mob-social-list-icon" width="24" height="24">
-            <use href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#instagram-icon"></use>
+            <use href="/simple-chocolate-redesign/assets/sprite-bac7d4cd.svg#instagram-icon"></use>
           </svg>
         </a>
       </li>
       <li class="mob-social-list-item">
         <a href="https://www.instagram.com" target="_blank">
           <svg class="mob-social-list-icon" width="24" height="24">
-            <use href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#twitter-icon"></use>
+            <use href="/simple-chocolate-redesign/assets/sprite-bac7d4cd.svg#twitter-icon"></use>
           </svg>
         </a>
       </li>
@@ -143,7 +143,7 @@
           >scroll down
           <span class="scroll-btn">
             <svg class="scroll-icon" width="22" height="22">
-              <use href="/simple-chocolate-redesign/assets/sprite-0e0510fa.svg#scroll-icon"></use>
+              <use href="/simple-chocolate-redesign/assets/sprite-bac7d4cd.svg#scroll-icon"></use>
             </svg>
           </span>
         </a>
@@ -390,26 +390,35 @@
       How it’s <span class="accent-color">made?</span>
     </h2>
     <div class="made-flexcontainer">
-      <picture>
-        <source
-          srcset="/simple-chocolate-redesign/assets/play-image-4f3dce83.jpg 1x, /simple-chocolate-redesign/assets/play-image@2x-1502ac28.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="/simple-chocolate-redesign/assets/play-image-tab-f59b3084.jpg 1x, /simple-chocolate-redesign/assets/play-image-tab@2x-01cdf9b7.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/simple-chocolate-redesign/assets/play-image-mob-194c25e9.jpg 1x, /simple-chocolate-redesign/assets/play-image-mob@2x-ee5d4d9d.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img
-          class="made-img"
-          src="/simple-chocolate-redesign/assets/play-image-4f3dce83.jpg"
-          alt="Chef preparing chocolate"
-          width="600"
-        />
-      </picture>
+      <div class="made-video video-enabled">
+        <a class="video-link" href="">
+          <picture>
+            <source
+              srcset="/simple-chocolate-redesign/assets/play-image-4f3dce83.jpg 1x, /simple-chocolate-redesign/assets/play-image@2x-1502ac28.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/simple-chocolate-redesign/assets/play-image-tab-f59b3084.jpg 1x, /simple-chocolate-redesign/assets/play-image-tab@2x-01cdf9b7.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/simple-chocolate-redesign/assets/play-image-mob-194c25e9.jpg 1x, /simple-chocolate-redesign/assets/play-image-mob@2x-ee5d4d9d.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              class="made-img"
+              src="/simple-chocolate-redesign/assets/play-image-4f3dce83.jpg"
+              alt="Chef preparing chocolate"
+              width="600"
+            />
+          </picture>
+        </a>
+        <button class="video-btn video-enabled" aria-label="Play video">
+          <svg class="play-icon" width="14" height="15">
+            <use href="../img/svg/sprite.svg#play-icon"></use>
+          </svg>
+        </button>
+      </div>
       <div class="made-list-container">
         <h3 class="made-list-title">
           Try our chocolates today and discover the perfect balance of flavor
