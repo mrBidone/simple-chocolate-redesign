@@ -128,6 +128,15 @@
   transform: rotateY(360deg);
 }
 
+.ingredients-card.animate-hint .card-front {
+  transform: rotateY(140deg);
+}
+
+.ingredients-card.animate-hint .card-back {
+  transform: rotateY(313deg);
+}
+
+
 @media only screen and (min-width: 768px) {
   .ingredients-section {
     padding-top: 100px;
@@ -173,6 +182,10 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 19px;
+  }
+
+  .ingredients-list-item {
+    cursor: pointer;
   }
 
   .ingredients-card {
