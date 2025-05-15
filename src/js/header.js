@@ -9,10 +9,12 @@ refs.mobMenu.addEventListener('click', handleMobMenuClick);
 
 function handleHamburgerClick() {
   refs.mobMenu.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
 }
 
 function handleMobMenuClick(event) {
   if (event.target.hasAttribute('data-menu-close')) {
     refs.mobMenu.classList.remove('is-open');
+    document.body.style.overflow = '';
   }
 }
