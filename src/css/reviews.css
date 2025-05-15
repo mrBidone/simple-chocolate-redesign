@@ -125,7 +125,7 @@
 
     .review-list-item {
         max-width: 360px;
-        cursor: pointer;
+        cursor: grab;
     }
 
     .review-card-thumb {

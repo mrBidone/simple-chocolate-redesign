@@ -111,7 +111,7 @@
   }
 
   .products-item {
-    cursor: pointer;
+    cursor: grab;
   }
 
   .swiper-pagination-bullet {

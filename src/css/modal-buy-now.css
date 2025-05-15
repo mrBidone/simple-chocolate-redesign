@@ -35,6 +35,11 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-buy-now-content {
+    overflow-y: auto;
+    max-height: calc(80vh - 64px);
+}
+
 .modal-buy-now-close-btn {
     display: block;
     position: absolute;
