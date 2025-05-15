@@ -23,7 +23,7 @@
     border-radius: 15px;
     box-shadow: 0 9px 27px 0 rgba(215, 228, 249, 0.25);
     background: #fff;
-
+    height: 200px;
 }
 
 .reviewers-photo {
@@ -125,9 +125,19 @@
 
     .review-list-item {
         max-width: 360px;
+        cursor: pointer;
     }
 
     .review-card-thumb {
         padding: 56px 24px 42px 24px;
+    }
+
+    .reviews-swiper-pagination span {
+        cursor: pointer;
+        transition: background-color 250ms linear;
+    }
+
+    .reviews-swiper-pagination span:hover {
+        background-color: var(--accent-color);
     }
 }

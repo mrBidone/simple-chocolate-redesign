@@ -109,4 +109,17 @@
   .products-section {
     padding: 64px 0;
   }
+
+  .products-item {
+    cursor: pointer;
+  }
+
+  .swiper-pagination-bullet {
+    cursor: pointer;
+    transition: background-color 250ms linear;
+  }
+
+  .swiper-pagination-bullet:hover {
+    background-color: var(--accent-color);
+  }
 }

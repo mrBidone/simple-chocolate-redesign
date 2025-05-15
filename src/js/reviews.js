@@ -78,13 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
               spaceBetween: 20,
             },
             768: {
-              centeredSlides: true,
-              slidesPerView: 1,
+              centeredSlides: false,
+              slidesPerView: 2,
               spaceBetween: 16,
             },
             1200: {
               slidesPerView: 3,
-              centeredSlides: true,
+              centeredSlides: false,
               spaceBetween: 28,
             },
           },
