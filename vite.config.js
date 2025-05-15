@@ -5,6 +5,7 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/simple-chocolate-redesign/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
