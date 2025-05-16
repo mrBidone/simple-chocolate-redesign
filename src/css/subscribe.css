@@ -2,7 +2,7 @@
     padding: 62px 0;
     color: var(--light-text-color);
     background-color: #150701;
-    background-image: url(../img/mobile/JPG/compressed/subcribe@2x.jpg);
+    background-image: url(../img/mobile/JPG/compressed/subcribe@2x.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -28,7 +28,7 @@
 @media only screen and (min-width: 768px) {
     .subscribe-section {
         padding: 72px 0;
-        background-image: url(../img/tablet/JPG/compressed/subcribe-tab@2x.jpg);
+        background-image: url(../img/tablet/JPG/compressed/subcribe-tab@2x.webp);
     }
 
     .section-title.subscribe-title {
@@ -47,6 +47,6 @@
 
 @media only screen and (min-width: 1200px) {
     .subscribe-section {
-        background-image: url(../img/desktop/JPG/compressed/Subcribe@2x.jpg);
+        background-image: url(../img/desktop/JPG/compressed/Subcribe@2x.webp);
     }
 }

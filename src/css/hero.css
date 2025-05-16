@@ -10,7 +10,7 @@
   background-image: linear-gradient(180deg,
       rgba(17, 17, 17, 0),
       rgba(17, 17, 17, 0.4)),
-    url(../img/mobile/JPG/compressed/hero-image-mob.jpg);
+    url(../img/mobile/JPG/compressed/hero-image-mob.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,7 +21,7 @@
     background-image: linear-gradient(180deg,
         rgba(17, 17, 17, 0),
         rgba(17, 17, 17, 0.4)),
-      url(../img/mobile/JPG/compressed/hero-image-mob@2x.jpg);
+      url(../img/mobile/JPG/compressed/hero-image-mob@2x.webp);
   }
 }
 
@@ -120,7 +120,7 @@
     background-image: linear-gradient(180deg,
         rgba(17, 17, 17, 0),
         rgba(17, 17, 17, 0.4)),
-      url(../img/tablet/JPG/compressed/hero-image-tab.jpg);
+      url(../img/tablet/JPG/compressed/hero-image-tab.webp);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -130,7 +130,7 @@
       background-image: linear-gradient(180deg,
           rgba(17, 17, 17, 0),
           rgba(17, 17, 17, 0.4)),
-        url(../img/tablet/JPG/compressed/hero-image-tab@2x.jpg);
+        url(../img/tablet/JPG/compressed/hero-image-tab@2x.webp);
     }
   }
 
@@ -188,7 +188,7 @@
     background-image: linear-gradient(180deg,
         rgba(17, 17, 17, 0),
         rgba(17, 17, 17, 0.4)),
-      url(../img/desktop/JPG/compressed/hero-image.jpg);
+      url(../img/desktop/JPG/compressed/hero-image.webp);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -198,7 +198,7 @@
       background-image: linear-gradient(180deg,
           rgba(17, 17, 17, 0),
           rgba(17, 17, 17, 0.4)),
-        url(../img/desktop/JPG/compressed/hero-image@2x.jpg);
+        url(../img/desktop/JPG/compressed/hero-image@2x.webp);
     }
   }
 
