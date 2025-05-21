@@ -193,6 +193,14 @@ document.addEventListener('DOMContentLoaded', () => {
     comment: form.querySelector('textarea[name="customer-comment"]'),
   };
 
+  const validators = {
+    name: value => /^[a-zA-Zа-яА-ЯёЁіІїЇєЄ]{3,}$/u.test(value.trim()),
+    surname: value => /^[a-zA-Zа-яА-ЯёЁіІїЇєЄ]{3,}$/u.test(value.trim()),
+    email: value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()),
+    phone: () => isValidPhone(fields.phone),
+    comment: value => value.trim().length >= 3 && value.trim().length <= 100,
+  };
+
   const productItems = document.querySelectorAll('.modal-products-list-item');
   let selectedProduct = null;
 
@@ -231,14 +239,6 @@ document.addEventListener('DOMContentLoaded', () => {
       validateForm();
     });
   });
-
-  const validators = {
-    name: value => /^[a-zA-Zа-яА-ЯёЁіІїЇєЄ]{3,}$/u.test(value.trim()),
-    surname: value => /^[a-zA-Zа-яА-ЯёЁіІїЇєЄ]{3,}$/u.test(value.trim()),
-    email: value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()),
-    phone: () => isValidPhone(fields.phone),
-    comment: value => value.trim().length >= 3 && value.trim().length <= 100,
-  };
 
   function validateField(fieldName) {
     const field = fields[fieldName];
@@ -342,9 +342,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (error) {
       console.error('❌ Ошибка при отправке:', error);
       alert('Ошибка при отправке формы. Попробуйте позже.');
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Отправить';
     }
   });
 });
