@@ -162,6 +162,10 @@
     max-width: 109px;
 }
 
+.modal-products-list-item.selected {
+    border: 1px solid var(--accent-color);
+}
+
 @media only screen and (min-width: 768px) {
     .modal-buy-now-window {
         position: absolute;

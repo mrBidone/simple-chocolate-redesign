@@ -1,4 +1,4 @@
-<div class="backdrop" data-modal-review>
+<!-- <div class="backdrop" data-modal-review>
   <div class="modal-buy-now-window review-window">
     <button
       type="button"
@@ -52,6 +52,62 @@
         ></textarea>
       </div>
       <button class="btn send-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div> -->
+
+<div class="backdrop" data-modal-review>
+  <div class="modal-buy-now-window review-window">
+    <button
+      type="button"
+      class="modal-buy-now-close-btn"
+      data-modal-review-close
+    >
+      <svg class="buy-now-close-icon" width="24" height="24">
+        <use href="./img/svg/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="section-title modal-title review-modal-title">
+      Leave a review&thinsp;<span class="mobile-br"><br /></span>about&thinsp;
+      <span class="accent-color">our chocolate</span>
+    </h2>
+    <form class="modal-buy-form" data-review-form>
+      <div>
+        <input
+          class="buy-form-input"
+          type="text"
+          name="customer-name"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div>
+        <input
+          class="buy-form-input"
+          type="email"
+          name="customer-email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="phone-wrapper">
+        <input
+          class="buy-form-input phone-input"
+          type="tel"
+          name="customer-phone-num"
+          required
+        />
+      </div>
+      <div>
+        <textarea
+          class="buy-form-input buy-form-textarea"
+          name="customer-comment"
+          placeholder="Enter text"
+          rows="10"
+          required
+        ></textarea>
+      </div>
+      <button class="btn send-btn" type="submit" disabled>Send</button>
     </form>
   </div>
 </div>

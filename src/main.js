@@ -5,6 +5,7 @@ import './js/intl-tel-select.js';
 import './js/modal-review.js';
 import './js/modal-subscribe.js';
 import './js/modals.js';
+import './js/modal-buy.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const ingredientsList = document.querySelector('.ingredients-list');
