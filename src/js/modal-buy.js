@@ -173,9 +173,12 @@
 //   });
 // });
 
+import emailjs from '@emailjs/browser';
 import { isValidPhone, getPhoneData } from './intl-tel-select.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  emailjs.init('YTC30gcSXENvou1mq'); // Public key от EmailJS
+
   const form = document.querySelector('.modal-buy-form');
   if (!form) return;
 
@@ -202,7 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Восстанавливаем выбранный продукт, если есть
     if (savedData.product) {
       productItems.forEach(item => {
         const price = item
@@ -225,8 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
       item.classList.add('selected');
       selectedProduct =
         item.querySelector('.modal-buy-price')?.textContent.trim() || '';
-
-      saveToLocalStorage(); // сохраняем выбор
+      saveToLocalStorage();
       validateForm();
     });
   });
@@ -245,7 +246,6 @@ document.addEventListener('DOMContentLoaded', () => {
     field.style.borderColor = isValid ? 'green' : 'red';
   }
 
-  // === 🟡 Валидация и сохранение при вводе ===
   Object.keys(fields).forEach(key => {
     fields[key].addEventListener('blur', () => {
       validateField(key);
@@ -264,12 +264,10 @@ document.addEventListener('DOMContentLoaded', () => {
         ? validators[key]() // phone не принимает аргумент
         : validators[key](fields[key].value)
     );
-
     const productSelected = Boolean(selectedProduct);
     submitBtn.disabled = !(allValid && productSelected);
   }
 
-  // === 🟡 Сохранение данных в localStorage ===
   function saveToLocalStorage() {
     const formData = {
       product: selectedProduct,
@@ -279,11 +277,10 @@ document.addEventListener('DOMContentLoaded', () => {
       phone: fields.phone.value.trim(),
       comment: fields.comment.value.trim(),
     };
-
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(formData));
   }
 
-  // === 🟢 Отправка формы через fetch на Formspree ===
+  // === 🟢 Отправка формы через Formspree и EmailJS ===
   form.addEventListener('submit', async e => {
     e.preventDefault();
     if (submitBtn.disabled) return;
@@ -300,8 +297,12 @@ document.addEventListener('DOMContentLoaded', () => {
       comment: fields.comment.value.trim(),
     };
 
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Отправка...';
+
     try {
-      const response = await fetch('https://formspree.io/f/mdkgjrqy', {
+      // === 🔵 Formspree ===
+      const formspreeResponse = await fetch('https://formspree.io/f/mdkgjrqy', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -310,28 +311,40 @@ document.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
+      const result = await formspreeResponse.json();
 
-      if (response.ok) {
-        console.log('🟢 Успешно отправлено!', result);
-        alert('Спасибо! Форма отправлена.');
-
-        form.reset();
-        selectedProduct = null;
-        productItems.forEach(el => el.classList.remove('selected'));
-        Object.values(fields).forEach(field => {
-          field.style.borderColor = '';
-        });
-
-        localStorage.removeItem(LOCAL_STORAGE_KEY);
-        validateForm();
-      } else {
-        console.error('🔴 Ошибка при отправке:', result);
-        alert('Произошла ошибка при отправке формы. Попробуйте позже.');
+      if (!formspreeResponse.ok) {
+        throw new Error(result?.message || 'Formspree error');
       }
+
+      console.log('✅ Formspree отправлено!', result);
+
+      // === ✉️ EmailJS ===
+      const emailResponse = await emailjs.send(
+        'service_kvigldv',
+        'template_zy1f7x3',
+        formData,
+        'YTC30gcSXENvou1mq'
+      );
+
+      console.log('✅ EmailJS отправлено!', emailResponse);
+      alert('Спасибо! Форма успешно отправлена.');
+
+      form.reset();
+      selectedProduct = null;
+      productItems.forEach(el => el.classList.remove('selected'));
+      Object.values(fields).forEach(field => {
+        field.style.borderColor = '';
+      });
+
+      localStorage.removeItem(LOCAL_STORAGE_KEY);
+      validateForm();
     } catch (error) {
-      console.error('🔴 Сетевая ошибка:', error);
-      alert('Не удалось отправить форму. Проверьте соединение.');
+      console.error('❌ Ошибка при отправке:', error);
+      alert('Ошибка при отправке формы. Попробуйте позже.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Отправить';
     }
   });
 });
