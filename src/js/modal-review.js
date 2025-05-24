@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     message: form.querySelector('textarea[name="customer-comment"]'),
   };
 
-  // 🟡 1. Загрузка данных из localStorage при инициализации
   const savedData = JSON.parse(localStorage.getItem(storageKey));
   if (savedData) {
     if (savedData.name) fields.name.value = savedData.name;
@@ -71,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     if (submitBtn.disabled) return;
 
@@ -84,14 +83,54 @@ document.addEventListener('DOMContentLoaded', () => {
       phone_country_iso: countryIso,
       message: fields.message.value.trim(),
     };
+    try {
+      // === 🔵 Formspree ===
+      const formspreeResponse = await fetch('https://formspree.io/f/mvganorb', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
+      const result = await formspreeResponse.json();
+
+      if (!formspreeResponse.ok) {
+        throw new Error(result?.message || 'Formspree error');
+      }
+
+      console.log('✅ FormspreeReview отправлено!', result);
+
+      // === ✉️ EmailJS ===
+      // const emailResponse = await emailjs.send(
+      //   'service_kvigldv',
+      //   'template_zy1f7x3',
+      //   formData,
+      //   'YTC30gcSXENvou1mq'
+      // );
+
+      // console.log('✅ EmailJS отправлено!', emailResponse);
+      // alert('Спасибо! Форма успешно отправлена.');
+
+      form.reset();
+      Object.values(fields).forEach(field => {
+        field.style.borderColor = '';
+      });
+
+      localStorage.removeItem(storageKey);
+      validateForm();
+    } catch (error) {
+      console.error('❌ Ошибка при отправке:', error);
+      alert('Ошибка при отправке формы. Попробуйте позже.');
+    }
     console.log('🟢 Отзыв отправлен:', formData);
 
-    form.reset();
-    localStorage.removeItem(storageKey);
-    Object.values(fields).forEach(field => {
-      field.style.borderColor = '';
-    });
-    validateForm();
+    // form.reset();
+    // localStorage.removeItem(storageKey);
+    // Object.values(fields).forEach(field => {
+    //   field.style.borderColor = '';
+    // });
+    // validateForm();
   });
 });

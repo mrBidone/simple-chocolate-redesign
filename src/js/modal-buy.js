@@ -288,8 +288,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const { number, countryIso } = getPhoneData(fields.phone);
 
     const formData = {
-      product: selectedProduct,
-      name: fields.name.value.trim(),
+      product_name: selectedProduct,
+      user_name: fields.name.value.trim(),
       surname: fields.surname.value.trim(),
       email: fields.email.value.trim(),
       phone: number,
